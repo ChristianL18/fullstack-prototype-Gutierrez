@@ -8,4 +8,46 @@
     height: 80px;
     width: 100%;
     background:gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    gap: 10px;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    font-family: Tahoma;
+}
+.nav h1{
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: bolder;
+    padding-left: 50px;
+}
+
+.note{
+    height: 50px;
+    width: 40%;
+    background: aqua;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+    border-radius: 10px;
+
+
+}
+.button{
+    background:  aquamarine;
+    font-family: Tahoma;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.pink{
+    color: pink;
 }
