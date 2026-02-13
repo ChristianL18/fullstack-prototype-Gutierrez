@@ -51,3 +51,64 @@
 .pink{
     color: pink;
 }
+
+
+
+/* Home */
+.main{
+    display: none;
+}
+
+
+
+
+
+/* Register */
+
+
+.register{
+    display: none;
+}
+
+.register{
+    padding: 10px;
+}
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.inputed{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+.verify-email{
+    padding: 20px;
+}
+
+.vet-text{
+    padding: 20px;
+    background-color: #d2e7dd;
+    width: 30%;
+}
+
+/* Verification */
+
+.verify-email{
+    display: none;
+}
