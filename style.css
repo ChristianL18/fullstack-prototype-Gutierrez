@@ -137,9 +137,10 @@ form input{
     display: none;
 }
 
-
+/* Profile page */
 .profile-page{
     padding: 10px;
+    display: none;
 }
 .insideprofile{
     height: 200px;
@@ -147,4 +148,21 @@ form input{
     background-color:whitesmoke;
     padding: 10px;
     box-shadow: 0 0 3px black;
+}
+
+/* Employee */
+.awol{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.add-edit{
+    padding: 10px;
+    border: 2px solid;
+    width: 450px;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
