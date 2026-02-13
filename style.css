@@ -111,7 +111,6 @@ form input{
 }
 
 
-
 .verifyemail{
     display: none;
 }
@@ -120,6 +119,17 @@ form input{
 /* Login  */
 .loginpage{
     padding: 20px;
+    display: none;
 }
 
 
+.profile-page{
+    padding: 10px;
+}
+.insideprofile{
+    height: 200px;
+    width: 500px;
+    background-color:whitesmoke;
+    padding: 10px;
+    box-shadow: 0 0 3px black;
+}
