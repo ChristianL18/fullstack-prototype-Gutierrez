@@ -6,13 +6,35 @@
     box-sizing: border-box;
 }
 
-.nav{
+.nav-notlogin{
+    height: 80px;
+    width: 100%;
+    background:gray;
+    display: none;
+    justify-content: space-between;
+    align-items: center;  
+} 
+
+.nav-notlogin h1{
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: bolder;
+    padding-left: 50px;
+} 
+.nav-admin{
     height: 80px;
     width: 100%;
     background:gray;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+}
+
+.nav-admin h1{
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: bolder;
+    padding-left: 50px;
 }
 .links{
     display: flex;
@@ -25,13 +47,6 @@
     text-decoration: none;
     font-family: Tahoma;
 }
-.nav h1{
-    font-size: 20px;
-    font-family: Tahoma;
-    font-weight: bolder;
-    padding-left: 50px;
-}
-
 .note{
     height: 50px;
     width: 40%;
