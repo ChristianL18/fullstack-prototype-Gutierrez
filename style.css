@@ -1,5 +1,23 @@
-/* Home */
+.page { 
+    display: none; 
+}
+.page.active { 
+    display: block; 
+}
+body.not-authenticated .role-logged-in { 
+    display: none; 
+}
+body.authenticated .role-logged-out { 
+    display: none; 
+}
+.role-admin { 
+    display: none; 
+}
+body.is-admin .role-admin { 
+    display: block; 
+}
 
+/* Home */
 *{
     padding: 0;
     margin: 0;
@@ -69,24 +87,11 @@
     color: pink;
 }
 
-
-.home{
-    display: none;
-}
-
-
-
-
-
 /* Register */
 
 
 .register{
-    display: none;
-}
-
-.register{
-    padding: 10px;
+    padding: 70px;
 }
 form{
     width: 300px;
@@ -94,7 +99,6 @@ form{
     flex-direction: column;
     gap: 20px;
 }
-
 
 .inputed{
     display: flex;
@@ -112,9 +116,11 @@ form input{
     margin-top: 20px;
 }
 
+
 /* Verification */
 .verifyemail{
     padding: 20px;
+    padding-top: 60px;
 }
 
 .vet-text{
@@ -125,22 +131,16 @@ form input{
     font-size: 16px;
 }
 
-
-.verifyemail{
-    display: none;
-}
-
-
 /* Login  */
 .loginpage{
     padding: 20px;
     display: none;
 }
 
+
 /* Profile page */
 .profile-page{
     padding: 10px;
-    display: none;
 }
 .insideprofile{
     height: 200px;
@@ -165,4 +165,14 @@ form input{
     width: 450px;
     margin-left: 20px;
     margin-bottom: 15px;
+}
+
+.Department{
+    width: 100%;
+}
+.dept-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
