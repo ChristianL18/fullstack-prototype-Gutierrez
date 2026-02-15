@@ -167,10 +167,20 @@ form input{
     margin-bottom: 15px;
 }
 
+/* Department */
 .Department{
     width: 100%;
 }
 .dept-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Account */
+
+.Acct-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
