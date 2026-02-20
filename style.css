@@ -1,20 +1,64 @@
-.page { 
-    display: none; 
+/* ===========================================
+   PAGE VISIBILITY CONTROL
+   
+.page = hidden by default
+.page.active = visible (shows the page)=========================================== */
+.page {
+  display: none;
 }
-.page.active { 
-    display: block; 
+.page.active {
+  display: block;
 }
-body.not-authenticated .role-logged-in { 
-    display: none; 
+
+/* ===========================================
+   PAGE VISIBILITY CONTROL
+   
+.page = hidden by default
+.page.active = visible (shows the page)=========================================== */
+.page {
+  display: none;
 }
-body.authenticated .role-logged-out { 
-    display: none; 
+.page.active {
+  display: block;
 }
-.role-admin { 
-    display: none; 
+
+/* ===========================================
+   NAVIGATION VISIBILITY CONTROL
+   
+Show different nav based on login state=========================================== */
+
+/* When NOT logged in: show login nav, hide admin nav */
+body.not-authenticated .nav-not-loggedin {
+  display: flex;
 }
-body.is-admin .role-admin { 
-    display: block; 
+body.not-authenticated .nav-admin {
+  display: none;
+}
+
+/* When logged in: hide login nav, show admin nav */
+body.authenticated .nav-not-loggedin {
+  display: none;
+}
+body.authenticated .nav-admin {
+  display: flex;
+}
+
+/* Role-based visibility */
+body.not-authenticated .role-logged-in {
+  display: none;
+}
+body.authenticated .role-logged-out {
+  display: none;
+}
+.role-admin {
+  display: none !important;
+}
+body.is-admin .role-admin {
+  display: block !important;
+}
+/* For dropdown items specifically */
+body.is-admin .dropdown-item.role-admin {
+  display: block !important;
 }
 
 /* Home */
@@ -24,16 +68,16 @@ body.is-admin .role-admin {
     box-sizing: border-box;
 }
 
-.nav-notlogin{
+.nav-not-loggedin{
     height: 80px;
     width: 100%;
     background:gray;
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center;  
 } 
 
-.nav-notlogin h1{
+.nav-not-loggedin h1{
     font-size: 20px;
     font-family: Tahoma;
     font-weight: bolder;
@@ -43,7 +87,7 @@ body.is-admin .role-admin {
     height: 80px;
     width: 100%;
     background:gray;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -118,7 +162,7 @@ form input{
 
 
 /* Verification */
-.verifyemail{
+.verify-email{
     padding: 20px;
     padding-top: 60px;
 }
